@@ -62,8 +62,9 @@ public class Toast extends CordovaPlugin {
           } else if ("center".equals(position)) {
             toast.setGravity(Gravity.CENTER_VERTICAL|Gravity.CENTER_HORIZONTAL, 0, 0);
           } else {
-            callbackContext.error("invalid position. valid options are 'top', 'center' and 'bottom'");
-            return;
+            // use default location
+//            callbackContext.error("invalid position. valid options are 'top', 'center' and 'bottom'");
+ //           return;
           }
 
           toast.show();
